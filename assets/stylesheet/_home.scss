@@ -1,0 +1,58 @@
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // align-items: center;
+    // padding: 10rem 0;
+
+    article{
+        padding-top: 12rem;
+        padding-left: 3rem;
+        h1{
+        font-family: "Lobster Two",cursive;
+        font-weight: 900;
+        font-size: 4rem;
+        background-image: linear-gradient(
+        315deg,#eec0c6,#7ee8fa 100%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+        h2{
+         margin-top: 1rem;
+        font-family: "Lobster Two",cursive;
+        font-weight: 900;
+        font-size: 2.2rem;
+        background-image: linear-gradient(
+        315deg,#eec0c6,#7ee8fa 94%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+        p{
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $text-light;
+            margin: 2rem 0;
+        }
+
+        button{
+            background-color: transparent;
+            border: none;
+            border: 1px solid $primary;
+            padding: 1rem;
+            border-radius: 0.3rem;
+
+            a{
+                color: $primary;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    figure{
+        padding-top: 20rem;
+    }
+}

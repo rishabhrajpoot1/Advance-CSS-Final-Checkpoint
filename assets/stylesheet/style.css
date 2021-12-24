@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  line-height: 1.5;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  margin-top: 1rem;
+  padding: 0 32px;
+}
+
+.header .brand {
+  font-weight: 900;
+}
+
+.header nav li {
+  margin-left: 2rem;
+}
+
+.header a {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.header a:hover {
+  color: #7ee7fa;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.hero article {
+  padding-top: 12rem;
+  padding-left: 3rem;
+}
+
+.hero article h1 {
+  font-family: "Lobster Two",cursive;
+  font-weight: 900;
+  font-size: 4rem;
+  background-image: linear-gradient(315deg, #eec0c6, #7ee8fa 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero article h2 {
+  margin-top: 1rem;
+  font-family: "Lobster Two",cursive;
+  font-weight: 900;
+  font-size: 2.2rem;
+  background-image: linear-gradient(315deg, #eec0c6, #7ee8fa 94%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero article p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: gray;
+  margin: 2rem 0;
+}
+
+.hero article button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #7ee7fa;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.hero article button a {
+  color: #7ee7fa;
+  font-size: 1.2rem;
+}
+
+.hero figure {
+  padding-top: 20rem;
+}
+
+.about-hero {
+  padding-left: 1rem;
+}
+
+.about-hero h1 {
+  margin: 3rem 0;
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Lobster Two",cursive;
+  font-weight: 900;
+}
+
+.about-hero .about-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.about-hero img {
+  height: 50vh;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.about-hero img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.about-hero article h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-hero article p {
+  margin-bottom: 2rem;
+}
+
+.about-hero article ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+}
+
+.chat {
+  text-align: center;
+  padding: 20rem 0;
+}
+
+.chat h3 {
+  font-family: "Lobster Two",cursive;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  background-color: #eec0c6;
+  background-image: linear-gradient(315deg, #eec0c6, #7ee8fa 74%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chat p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.chat p a {
+  color: white;
+  border: 2px solid #7ee7fa;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.project-header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.project-header h1 {
+  font-size: 3rem;
+}
+
+.project-header p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: gray;
+}
+
+.project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+.project img {
+  border-radius: 2rem;
+}
+
+.project div {
+  margin-top: 3rem;
+}
+
+.project div h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.project div p {
+  margin: 1.5rem 0;
+}
+
+.project div button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #7ee7fa;
+  padding: 0.5rem;
+}
+
+.project div button a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.github {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.github p {
+  font-size: 2rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+
+.github button {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #7ee7fa;
+  padding: 1rem 2rem;
+}
+
+.github button a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.github button a i {
+  margin-right: 0.5rem;
+}
+
+.contact-hero {
+  margin-top: 4rem;
+  width: 40%;
+}
+
+.contact-hero img {
+  border-radius: 1rem;
+}
+
+.contact-hero blockquote {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.contact-hero p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 800;
+}
+
+.contact-hero a {
+  color: #7ee7fa;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-hero a i {
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=style.css.map */

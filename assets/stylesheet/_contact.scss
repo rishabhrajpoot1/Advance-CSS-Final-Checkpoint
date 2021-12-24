@@ -1,0 +1,34 @@
+.contact-hero{
+    margin-top: 4rem;
+    width: 40%;
+
+    img{
+        border-radius: 1rem;
+    }
+
+    blockquote{
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+        font-weight: 800;
+    }
+
+    a{
+        color: $primary;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        i{
+            margin-right: 0.5rem;
+        }
+    }
+
+    
+}
