@@ -8,7 +8,6 @@ body{
 }
 
 .container{
-    // max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -34,8 +33,15 @@ img{
         font-weight: 900;
     }
     nav{
+
         li{
             margin-left: 2rem;
+        }
+
+        .icon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
    
@@ -47,4 +53,77 @@ img{
                 color: $primary;
             }
         }
+}
+
+
+#toggle{
+    display: none;
+}
+
+.bars{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+
+    html{
+        font-size: 12px;
+    }
+
+    .nav{
+        display: none;
+    }
+    .brand{
+        color:white;
+        position: fixed;
+        top: 0.8rem;
+        z-index: 99;
+    }
+    .nav li{
+        margin: 1rem 0;
+        font-size: 2rem;
+        z-index: 1;
+    }
+
+    .nav-item li a{
+       color: white;
+    }
+
+    .nav ul{
+        margin-left: 1rem;
+    }
+    .input{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    .bars{
+        display: inline-block;
+        font-size: 24px ;
+        color:white;
+        position:fixed;
+        right: 1rem;
+        top: 1.2rem;
+        z-index: 3;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background-color:rgba(204, 207, 216, 0.9);
+        padding-top: 12rem;
+        z-index: 2;
+    }
+
+    .column{
+        flex-direction: column;
+    }
 }

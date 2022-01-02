@@ -1,6 +1,10 @@
 .contact-hero{
     margin-top: 4rem;
-    width: 40%;
+    width: 50%;
+
+    @media screen and (max-width:768px) {
+width: 90%;
+    }
 
     img{
         border-radius: 1rem;
@@ -27,6 +31,16 @@
 
         i{
             margin-right: 0.5rem;
+        }
+    }
+
+    nav{
+        ul{
+            li{
+                @media screen and (max-width:768px) {
+                  margin-top: 2rem;
+                }
+            }
         }
     }
 

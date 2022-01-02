@@ -14,9 +14,21 @@ p{
 
 .project{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
     padding: 0 2rem;
+
+    @media screen and (max-width:768px) {
+
+
+        grid-template-columns: 1fr;
+
+        html{
+            font-size: 10px;
+        }
+
+        
+    }
 
     img{
         border-radius: 2rem;
